@@ -1,0 +1,78 @@
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+
+ul {
+  display: flex;
+  list-style: none;
+  position: absolute;
+  top: 50px;
+  right: 50px;
+}
+
+a {
+  text-decoration: none;
+}
+
+span {
+  padding: 0;
+  margin: 0;
+}
+
+.logo {
+  font-size: 90px;
+  font-family: "Noto Sans";
+  text-align: center;
+  font-weight: 600;
+  letter-spacing: -5px;
+}
+
+.logo span:nth-child(1) {
+  color: #4285f4;
+}
+
+.logo span:nth-child(2) {
+  color: #ea4336;
+}
+
+.logo span:nth-child(3) {
+  color: #fbbc07;
+}
+
+.logo span:nth-child(4) {
+  color: #4285f4;
+}
+
+.logo span:nth-child(5) {
+  color: #34a853;
+}
+
+.logo span:nth-child(6) {
+  color: #ea4336;
+}
+
+.searchBar {
+  display: flex;
+  align-items: center;
+  margin-top: 30px;
+}
+
+.searchBar__input {
+  width: 500px;
+}
+
+.searchBar__icons {
+  position: absolute;
+  right: 300px;
+}
+
+.extraBtn {
+  display: flex;
+  margin-top: 30px;
+  width: 270px;
+  justify-content: space-between;
+}
