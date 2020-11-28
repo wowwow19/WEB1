@@ -11,27 +11,36 @@
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.1/css/all.css" integrity="sha384-vp86vTRFVJgpjF9jiIGPEEqYqlDwgyBgEF109VFjmqGmIY/Y4HV4d3Gp2irVfcrp" crossorigin="anonymous">
 </head>
 <body>
-    <!-- <div class="navBar">
-        <ul>
-            <li><a href="">Gmail</a></li>
-            <li><a href="">이미지</a></li>
-            <li><i class="fas fa-th"></i></li>
-            <li><i class="fas fa-user-circle"></i></li>
-        </ul>
-    </div> -->
-    <div class="logo">
-    <a href="#"><span>W</span><span>o</span><span>o</span><span>g</span><span>l</span><span>e</span></a>
-    </div>
-    <div class="searchBar">
-        <form action="https://www.google.co.kr/search" method="GET">
+    <ul class="navBar">
+        <li><a href=""><span>Gmail</span></a></li>
+        <li><a href=""><span>이미지</span></a></li>
+        <li><a href=""><i class="fas fa-th"></i></a></li>
+        <li><a href=""><i class="fas fa-user-circle"></i></a></li>
+    </ul>
+
+    <ul class="mobileBtn">
+        <li><a href=""><i class="fas fa-bars"></i></a></li>
+        <li><a href=""><span>전체</span></a></li>
+        <li><a href=""><span>이미지</span></a></li>
+    </ul>
+
+    <div class="main">
+        <div class="logo">
+        <span>W</span><span>o</span><span>o</span><span>g</span><span>l</span><span>e</span>
+        </div>
+        <div class="searchBar">
             <div class="searchBar__input">
-                <input name="q" type="text" class="form-control rounded-pill" placeholder="Google 검색 또는 URL입력" aria-label="Recipient's username" aria-describedby="button-addon2">
+                <form action="https://www.google.co.kr/search" method="GET">
+                    <div>
+                        <input name="q" type="text" class="form-control rounded-pill" placeholder="Google 검색 또는 URL입력" aria-label="Recipient's username" aria-describedby="button-addon2">
+                    </div>
+                </form>
             </div>
-        </form>
-        <!-- <ul class="searchBar__icons">
-            <i class="fas fa-keyboard"></i>
-            <i class="fas fa-microphone"></i>
-        </ul> -->
+            <div class="searchBar__icons">
+                <i class="fas fa-keyboard"></i>
+                <i class="fas fa-microphone"></i>
+            </div>
+        </div>
     </div>
     <div class="extraBtn">
         <button type="button" class="btn btn-light">Google 검색</button>

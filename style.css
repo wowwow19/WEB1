@@ -7,21 +7,36 @@ body {
   width: 100%;
 }
 
-ul {
+.navBar {
   display: flex;
   list-style: none;
   position: absolute;
-  top: 50px;
+  align-content: baseline;
+  top: 30px;
   right: 50px;
 }
 
-a {
+.navBar li {
+  margin: 10px;
+}
+
+.navBar a {
   text-decoration: none;
+  color: rgba(0, 0, 0, 0.815);
+}
+
+.navBar i {
+  font-size: 25px;
+  color: #04897b;
 }
 
 span {
   padding: 0;
   margin: 0;
+}
+
+.mobileBtn {
+  display: none;
 }
 
 .logo {
@@ -58,8 +73,10 @@ span {
 
 .searchBar {
   display: flex;
+  flex-direction: row;
   align-items: center;
   margin-top: 30px;
+  position: relative;
 }
 
 .searchBar__input {
@@ -68,7 +85,14 @@ span {
 
 .searchBar__icons {
   position: absolute;
-  right: 300px;
+  right: 20px;
+  padding: 0;
+  margin: 0;
+  color: gray;
+}
+
+.searchBar__icons i {
+  margin: 5px;
 }
 
 .extraBtn {
@@ -76,4 +100,48 @@ span {
   margin-top: 30px;
   width: 270px;
   justify-content: space-between;
+}
+
+@media screen and (max-width: 500px) {
+  .main {
+    position: absolute;
+    bottom: 400px;
+  }
+
+  .logo {
+    font-size: 60px;
+  }
+  .searchBar__input {
+    width: 300px;
+  }
+
+  .extraBtn {
+    display: none;
+  }
+
+  .navBar span {
+    display: none;
+  }
+
+  .mobileBtn {
+    display: flex;
+    list-style: none;
+    position: absolute;
+    align-content: baseline;
+    top: 30px;
+    left: 10px;
+  }
+
+  .mobileBtn li {
+    margin: 10px;
+  }
+
+  .mobileBtn i {
+    font-size: 25px;
+    color: #5f6161;
+  }
+
+  .mobileBtn span {
+    color: #5f6161;
+  }
 }
